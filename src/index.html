@@ -19,8 +19,8 @@
       <switch expression="item.type">
         <case n="'graphic'">
           <div class="graphic">
-            <if condition="item.value.asset === 'graphic-name.html'">
-              <include src="graphic-name.html"></include>
+            <if condition="item.value.asset === 'deck.html'">
+              <include src="deck.html"></include>
             </if>
           </div>
         </case>
@@ -28,7 +28,7 @@
     </each>
   </div>
 
-  <if condition="USE_COVER_HED">    
+  <if condition="USE_COVER_HED">
     <include src="partials/header-cover.html"></include>
   </if>
   <else>
@@ -49,9 +49,9 @@
         </case>
         <case n="'graphic'">
           <div class="graphic">
-            <if condition="item.value.asset === 'graphic-name.html'">
+            <!-- <if condition="item.value.asset === 'graphic-name.html'">
               <include src="graphic-name.html"></include>
-            </if>
+            </if> -->
           </div>
         </case>
       </switch>
@@ -61,7 +61,7 @@
   <div class="spectate-dev-footer">
     <a href="{{ DOC_URL }}" target="_blank">Doc</a>
   </div>
-  
+
   <include src="partials/footer.html"></include>
 
   <script src="./script.js"></script>
@@ -132,7 +132,7 @@
                   return result;
               };
           }
-         
+
       })();
 
       setTimeout(() => {
