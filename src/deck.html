@@ -1,3 +1,36 @@
-<div class="deck">
-  <p>Placeholder. Asset in src/deck.html</p>
+<div class="map-container">
+	<p class="prescrolly-fade-in">{{ item.value.prescrolly }}
+	</p>
+
+ 	<div>
+ 		<include class="fade-stick-map" src="map.html">
+ 		</include>
+
+ 		<each loop="sentence in item.value.text ? item.value.text.split(' / ') : []">
+	  		<div class="scrolly">
+			<p class="g-body scrolly-text">{{ sentence }}</p>
+	 		</div>
+		</each>
+
+		<include class="fade-in-graphic" src="bar-graphic.html">
+ 		</include>
+
+		<div class="blue-dots-fade-in">
+			
+		</div>
+
+ 		<each loop="sentence in item.value.text ? item.value.text.split(' / ') : []">
+	  		<div class="scrolly">
+			<p class="g-body scrolly-text">{{ sentence }}</p>
+	 		</div>
+		</each>
+
+		// map fades out
+
+	 	<include class="fade-last-graphic" src="last-graphic.html">
+ 		</include>
+
+	 	
+ 	</div>
+
 </div>

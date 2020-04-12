@@ -1,9 +1,6 @@
 @import 'styles/spectate';
 
-// Uncomment the next line if this project is an full-page Eye lead
-// @import 'styles/eye-lead-ellipsis';
-// Uncomment the next line if this project is a News story
-// @import 'styles/news-ellipsis';
+@import 'styles/news-ellipsis';
 
 body {
   // Arc's overflow hidden on <body> messes up position sticky
@@ -15,3 +12,80 @@ body {
   border: 1px solid red;
   color: red;
 }
+
+
+.map-container {
+	height: 100vh;
+	position: sticky;
+	position: -webkit-sticky;
+	top: 0;
+	z-index: -1;
+	margin-bottom: 20px;
+
+	include {
+		object-fit: cover;
+		width: 100vw;
+		height: 10vh;
+	}
+}
+
+
+.scrolly {
+	display: flex;
+  justify-content: center;
+  margin: 0 auto;
+	padding-bottom: 90vh;
+}
+
+
+.prescrolly-text {
+	font-family: Georgia;
+  font-size: 23px;
+  line-height: 33px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 10px 12px;
+  color: #fff;
+}
+
+
+@keyframes fadeInUp {
+  from { 
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+p {
+  // first we make all instances of this transparent. 
+  opacity: 0; 
+  // as we're using the same animation for each instance, call it here so we're not repeating it
+  animation: fadeInUp 1s ease-in-out 0s forwards;
+
+  // then define the animation delay in each class
+  &.fade-map {
+    animation-delay: 1s;
+  }
+  &.second {
+    animation-delay: 3s;
+  }
+  &.third {
+    animation-delay: 5s;
+  }
+  &.fourth {
+    animation-delay: 7s;
+  }
+  &.fifth {
+    animation-delay: 9s;
+  }
+  &.sixth {
+    animation-delay: 11s;
+  }
+ }

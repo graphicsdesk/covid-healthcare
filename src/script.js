@@ -29,4 +29,19 @@ export function hamburgerTrigger() {
 
 // Text balance headline, deck, and image captions
 
-textBalancer.balanceText('.headline, .deck, .image-overlay .image-caption-text');
+textBalancer.balanceText('.headline, .image-overlay .image-caption-text');
+
+enterView({
+  selector: 'map.html',
+  enter: function(el) {
+    var element = document.getElementById('map.html');;
+  },
+  exit: function(el) {
+    el.classList.remove('entered');
+  },
+  progress: function(el, progress) {
+    el.style.opacity = progress;
+  },
+  offset: 0.5, // enter at middle of viewport
+  once: true, // trigger just once
+});
