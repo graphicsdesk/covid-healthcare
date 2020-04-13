@@ -43,8 +43,7 @@ enterView({
   exit: function() {
     deckContainer.classList.remove('show-map');
   },
-  offset: 1, // enter at middle of viewport
-  // once: true, // trigger just once
+  offset: 1,
 });
 
 enterView({
@@ -55,12 +54,11 @@ enterView({
   exit: function() {
     deckContainer.classList.remove('show-dots');
   },
-  offset: 1, // enter at middle of viewport
-  // once: true, // trigger just once
+  offset: 1,
 });
 
 enterView({
-  selector: '.step-container:nth-child(5)',
+  selector: '.step-container:nth-child(6)',
   enter: function() {
     deckContainer.classList.add('show-hospital-img');
   },
