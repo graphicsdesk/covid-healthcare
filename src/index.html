@@ -49,17 +49,13 @@
         </case>
         <case n="'graphic'">
           <div class="graphic">
-            <!-- <if condition="item.value.asset === 'graphic-name.html'">
-              <include src="graphic-name.html"></include>
-            </if> -->
+            <if condition="item.value.asset === 'cases-map.html'">
+              <include src="cases-map.html"></include>
+            </if>
           </div>
         </case>
       </switch>
     </each>
-  </div>
-
-  <div class="spectate-dev-footer">
-    <a href="{{ DOC_URL }}" target="_blank">Doc</a>
   </div>
 
   <include src="partials/footer.html"></include>
