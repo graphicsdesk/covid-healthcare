@@ -1,36 +1,27 @@
-<div class="map-container">
-	<p class="prescrolly-fade-in">{{ item.value.prescrolly }}
+<div>
+	<p class="prescrolly-fade-in g-body paragraph">{{ item.value.prescrolly }}
 	</p>
 
- 	<div>
+ 	<div class="map-container">
  		<include class="fade-stick-map" src="map.html">
  		</include>
+  </div>
 
- 		<each loop="sentence in item.value.text ? item.value.text.split(' / ') : []">
-	  		<div class="scrolly">
-			<p class="g-body scrolly-text">{{ sentence }}</p>
-	 		</div>
-		</each>
+	<each loop="sentence in item.value.steps">
+  	<div class="step-container">
+		  <p class="g-body step-text">{{{ sentence }}}</p>
+ 		</div>
+	</each>
 
-		<include class="fade-in-graphic" src="bar-graphic.html">
- 		</include>
+	<!-- <include class="fade-in-graphic" src="bar-graphic.html">
+		</include> -->
 
-		<div class="blue-dots-fade-in">
-			
-		</div>
+	<!-- <div class="blue-dots-fade-in">
 
- 		<each loop="sentence in item.value.text ? item.value.text.split(' / ') : []">
-	  		<div class="scrolly">
-			<p class="g-body scrolly-text">{{ sentence }}</p>
-	 		</div>
-		</each>
+	</div> -->
 
-		// map fades out
+	<!-- map fades out -->
 
-	 	<include class="fade-last-graphic" src="last-graphic.html">
- 		</include>
-
-	 	
- 	</div>
-
+ 	<!-- <include class="fade-last-graphic" src="last-graphic.html">
+	</include> -->
 </div>

@@ -7,7 +7,14 @@
     {
       "type": "graphic",
       "value": {
-        "asset": "deck.html"
+        "asset": "deck.html",
+        "prescrolly": "In the epicenter of the COVID-19 pandemic, New York City residents face unequal levels of risk and accessibility to treatment along socioeconomic lines. For low-income neighborhoods like West Harlem, COVID-19 poses a risk for thousands of elderly and immunocompromised families.",
+        "steps": [
+          "A report from New York City Department of Health and Mental Hygiene in 2017 revealed that child and adult asthma-related emergencies were over twice as frequent in Community District 9, which covers Morningside Heights, West Harlem, and surrounding areas, than other NYC neighborhoods.",
+          "A later report released in 2020 ranked CD9 as the third highest in the city for people who needed medical attention and couldn’t get it.",
+          "Coupled with the peak of COVID-19 cases in NYC, over 145,000 CD9 residents have one hospital in their district, with only 495 beds.",
+          "Research suggests the cost of COVID-19 treatment could reach $20,292, making up a third of the residents’ <a href=\"https://censusreporter.org/profiles/79500US3603802-nyc-manhattan-community-district-9-hamilton-heights-manhattanville-west-harlem-puma-ny/\">median household income</a>. Nearly 40 percent of the community is on income assistance, nearly 25 percent live below the poverty line, and nearly half are rent burdened, meaning that they spend over 35 percent of their income on rent."
+        ]
       }
     }
   ],

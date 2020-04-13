@@ -32,16 +32,15 @@ export function hamburgerTrigger() {
 textBalancer.balanceText('.headline, .image-overlay .image-caption-text');
 
 enterView({
-  selector: 'map.html',
+  selector: '.prescrolly-fade-in',
   enter: function(el) {
-    var element = document.getElementById('map.html');;
+    const element = document.getElementById('g-map-box');
+    element.style.opacity = 1;
   },
   exit: function(el) {
-    el.classList.remove('entered');
+    var element = document.getElementById('g-map-box');
+    element.style.opacity = 0;
   },
-  progress: function(el, progress) {
-    el.style.opacity = progress;
-  },
-  offset: 0.5, // enter at middle of viewport
-  once: true, // trigger just once
+  offset: 0.94, // enter at middle of viewport
+  // once: true, // trigger just once
 });
