@@ -1,5 +1,9 @@
 /* These styles help hide default site elements for a News story */
 
+* {
+  box-sizing: unset;
+}
+
 #top {
   // UNCOMMENT to hide navbar
   display: none;
