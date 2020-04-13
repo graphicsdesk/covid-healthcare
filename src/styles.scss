@@ -9,12 +9,6 @@ body {
   overflow-x: visible !important;
 }
 
-.graphic-name {
-  height: 300px;
-  border: 1px solid red;
-  color: red;
-}
-
 #vals-img {
   position: absolute;
   height: 100vh;
@@ -30,7 +24,14 @@ body {
 
 .prescrolly-fade-in {
   color: white;
-  margin-bottom: 60vh;
+  margin: -65vh auto 60vh;
+  padding: 20px;
+  background: rgba(0,0,0,0.45);
+  font-family: $georgia;
+  font-size: 20px;
+  line-height: 30px;
+  width: calc(100% - 40px);
+  max-width: 460px;
 }
 
 #g-map-box {
@@ -92,57 +93,8 @@ body {
   .step-container {
     opacity: 1;
   }
-}
 
-
-.prescrolly-text {
-	font-family: Georgia;
-  font-size: 23px;
-  line-height: 33px;
-  text-align: center;
-  background-color: rgba(0, 0, 0, 0.3);
-  padding: 10px 12px;
-  color: #fff;
-}
-
-
-@keyframes fadeInUp {
-  from { 
-    opacity: 0;
-    -webkit-transform: translate3d(0, 100%, 0);
-    transform: translate3d(0, 100%, 0);
-  }
-
-  to {
-    opacity: 1;
-    -webkit-transform: none;
-    transform: none;
+  .prescrolly-fade-in {
+    // opacity: 0;
   }
 }
-
-p {
-  // first we make all instances of this transparent. 
-  opacity: 0; 
-  // as we're using the same animation for each instance, call it here so we're not repeating it
-  animation: fadeInUp 1s ease-in-out 0s forwards;
-
-  // then define the animation delay in each class
-  &.fade-map {
-    animation-delay: 1s;
-  }
-  &.second {
-    animation-delay: 3s;
-  }
-  &.third {
-    animation-delay: 5s;
-  }
-  &.fourth {
-    animation-delay: 7s;
-  }
-  &.fifth {
-    animation-delay: 9s;
-  }
-  &.sixth {
-    animation-delay: 11s;
-  }
- }
