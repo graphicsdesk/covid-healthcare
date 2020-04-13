@@ -42,7 +42,7 @@ body {
   align-items: center;
 }
 
-.dots-container #g-idk-box {
+.dots-container #g-hospital_dots-box {
   opacity: 0;
   transition-duration: $anim-duration;
 }
@@ -114,7 +114,7 @@ body {
 }
 
 #deck-container.show-dots {
-  .dots-container #g-idk-box {
+  .dots-container #g-hospital_dots-box {
     opacity: 1;
   }
 }
