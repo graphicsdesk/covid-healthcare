@@ -58,3 +58,14 @@ enterView({
   offset: 1, // enter at middle of viewport
   // once: true, // trigger just once
 });
+
+enterView({
+  selector: '.step-container:nth-child(5)',
+  enter: function() {
+    deckContainer.classList.add('show-hospital-img');
+  },
+  exit: function() {
+    deckContainer.classList.remove('show-hospital-img');
+  },
+  offset: 1,
+});
