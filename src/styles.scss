@@ -50,12 +50,15 @@ body {
 }
 
 .dots-container {
-  opacity: 0;
-  transition-duration: $anim-duration;
   height: 100vh;
   display: flex;
   align-items: center;
   background: white;
+}
+
+.dots-container #g-idk-box {
+  opacity: 0;
+  transition-duration: $anim-duration;
 }
 
 .step-container {
@@ -104,15 +107,11 @@ body {
   .step-container {
     opacity: 1;
   }
-
-  .prescrolly-fade-in {
-    // opacity: 0;
-  }
 }
 
 
 #deck-container.show-dots {
-  .dots-container {
+  .dots-container #g-idk-box {
     opacity: 1;
   }
 }
