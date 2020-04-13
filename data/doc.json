@@ -83,8 +83,10 @@
       "value": "A report by <a href=\"https://www1.nyc.gov/assets/doh/downloads/pdf/imm/covid-19-deaths-race-ethnicity-04082020-1.pdf\">New York City Health</a> stated that as of April 6, COVID-19 death rates for both the Hispanic/Latinx population and the Black population—a demographic that comprises 68 percent of the district’s population—were double that of white patients."
     },
     {
-      "type": "text",
-      "value": "<b>[insert graphic]"
+      "type": "embed",
+      "value": {
+        "code": "<iframe title=\"Age-adjusted COVID-19 death rate per 100,000 cases in New York City\" aria-label=\"Bar Chart\" id=\"datawrapper-chart-Hg2kZ\" src=\"//datawrapper.dwcdn.net/Hg2kZ/2/\" scrolling=\"no\" frameborder=\"0\" style=\"width: 0; min-width: 100% !important; border: none;\" height=\"242\"></iframe><script type=\"text/javascript\">!function(){\"use strict\";window.addEventListener(\"message\",function(a){if(void 0!==a.data[\"datawrapper-height\"])for(var e in a.data[\"datawrapper-height\"]){var t=document.getElementById(\"datawrapper-chart-\"+e)||document.querySelector(\"iframe[src*='\"+e+\"']\");t&&(t.style.height=a.data[\"datawrapper-height\"][e]+\"px\")}})}();</script>"
+      }
     },
     {
       "type": "text",

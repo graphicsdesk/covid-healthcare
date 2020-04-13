@@ -47,6 +47,11 @@
         <case n="'image'">
           <include src="partials/image.html"></include>
         </case>
+        <case n="'embed'">
+          <div class="g-body graphic">
+            {{{ item.value.code }}}
+          </div>
+        </case>
         <case n="'graphic'">
           <div class="graphic">
             <if condition="item.value.asset === 'cases-map.html'">
