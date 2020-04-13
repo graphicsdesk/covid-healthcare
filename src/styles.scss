@@ -26,7 +26,7 @@ body {
   max-width: 460px;
 }
 
-#g-map-box {
+#g-map-box, #g-idk-box {
   width: 100%;
 }
 
@@ -111,12 +111,12 @@ body {
   height: 100vh;
 	margin-bottom: 20px;
 
-  &>div {
+  div {
     position: absolute;
     width: 100%;
     height: 100vh;
 
-    &>img {
+    img {
       width: 100%;
       height: 100%;
       object-fit: cover;
