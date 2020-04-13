@@ -4,10 +4,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>{{ headline }}: {{ deck }}</title>
+  <title>{{ headline }}</title>
   <link rel="stylesheet" href="./styles.scss">
   <link rel="shortcut icon" href="https://www.columbiaspectator.com/pb/resources/img/CDS_Favicon.ico" type="image/x-icon"/>
-  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -49,17 +49,13 @@
         </case>
         <case n="'graphic'">
           <div class="graphic">
-            <!-- <if condition="item.value.asset === 'graphic-name.html'">
-              <include src="graphic-name.html"></include>
-            </if> -->
+            <if condition="item.value.asset === 'cases-map.html'">
+              <include src="cases-map.html"></include>
+            </if>
           </div>
         </case>
       </switch>
     </each>
-  </div>
-
-  <div class="spectate-dev-footer">
-    <a href="{{ DOC_URL }}" target="_blank">Doc</a>
   </div>
 
   <include src="partials/footer.html"></include>
