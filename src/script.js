@@ -46,3 +46,15 @@ enterView({
   offset: 1, // enter at middle of viewport
   // once: true, // trigger just once
 });
+
+enterView({
+  selector: '.step-text:nth-child(3)',
+  enter: function() {
+    deckContainer.classList.add('show-dots');
+  },
+  exit: function() {
+    deckContainer.classList.remove('show-dots');
+  },
+  offset: 1, // enter at middle of viewport
+  // once: true, // trigger just once
+});

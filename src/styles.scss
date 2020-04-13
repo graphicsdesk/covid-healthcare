@@ -47,6 +47,15 @@ body {
   background: white;
 }
 
+.dots-container {
+  opacity: 0;
+  transition-duration: $anim-duration;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background: white;
+}
+
 .step-container {
   margin: 0 auto;
   padding-bottom: 90vh;
@@ -96,5 +105,13 @@ body {
 
   .prescrolly-fade-in {
     // opacity: 0;
+  }
+}
+
+
+#deck-container.show-dots {
+
+  .dots-container {
+    opacity: 1;
   }
 }
