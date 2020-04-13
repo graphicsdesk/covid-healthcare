@@ -137,6 +137,7 @@ header {
   }
 
   .pub-date {
+    margin-top: 1px;
     margin-bottom: 10px;
   }
 
@@ -160,7 +161,7 @@ header {
     display: block;
     font-weight: 600;
     font-family: $graphik;
-    font-size: 16px;
+    font-size: 17px;
     line-height: 1.7;
   }
 
@@ -473,7 +474,7 @@ header {
 }
 
 .story-top .graphic:first-child {
-  margin-top: 0;
+  margin: 0;
 }
 
 .spectate-dev-footer {
