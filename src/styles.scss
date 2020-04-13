@@ -34,13 +34,15 @@ body {
   max-width: 460px;
 }
 
-#g-map-box {
+#g-map-box, #g-idk-box {
   width: 100%;
 }
 
 .ai2html-container {
   opacity: 0;
   transition-duration: $anim-duration;
+  position: absolute;
+  width: 100%;
   height: 100vh;
   display: flex;
   align-items: center;
@@ -110,7 +112,6 @@ body {
 
 
 #deck-container.show-dots {
-
   .dots-container {
     opacity: 1;
   }

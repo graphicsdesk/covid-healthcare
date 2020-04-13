@@ -48,7 +48,7 @@ enterView({
 });
 
 enterView({
-  selector: '.step-text:nth-child(3)',
+  selector: '.step-container:nth-child(5)',
   enter: function() {
     deckContainer.classList.add('show-dots');
   },
