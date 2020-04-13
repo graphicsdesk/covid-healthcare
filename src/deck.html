@@ -19,7 +19,14 @@
 
 	<each loop="sentence in item.value.steps">
   	<div class="step-container">
-		  <p class="g-body step-text">{{{ sentence }}}</p>
+		  <div>
+        <p>{{{ sentence }}}</p>
+        <if condition="loop.index === 1">
+          <div class="graphic-embed">
+            <include src="AccessBar.html"></include>
+          </div>
+        </if>
+      </div>
  		</div>
 	</each>
 

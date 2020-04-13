@@ -100,9 +100,6 @@ b {
 }
 
 header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   margin: 0 auto;
   padding: 36px 15px;
 
@@ -115,14 +112,11 @@ header {
   }
 
   .headline {
-    margin: 0;
-    margin-top: 50px;
-    font-size: 65px;
-    line-height: 1;
+    margin: 50px 0 20px;
+    font-size: 45px;
+    line-height: 1.15;
     font-weight: bold;
-    margin-bottom: 14px;
-    text-align: center;
-    font-weight: 700;
+    font-weight: 500;
     font-family: Playfair Display;
   }
 
@@ -159,18 +153,15 @@ header {
 }
 
 .inline-credits {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   margin: 0;
-  margin-bottom: 30px;
+  // margin-bottom: 30px;
 
   span {
+    display: block;
     font-weight: 600;
     font-family: $graphik;
     font-size: 16px;
     line-height: 1.7;
-    text-align: center;
   }
 
   a {

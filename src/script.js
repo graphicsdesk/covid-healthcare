@@ -29,7 +29,7 @@ export function hamburgerTrigger() {
 
 // Text balance headline, deck, and image captions
 
-textBalancer.balanceText('.headline, .image-overlay .image-caption-text');
+// textBalancer.balanceText('.headline, .image-overlay .image-caption-text');
 
 // Map container opacity stuff
 
