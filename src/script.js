@@ -47,23 +47,23 @@ enterView({
 });
 
 enterView({
-  selector: '.step-container:nth-child(4)',
+  selector: '.step-container:nth-child(5)',
   enter: function() {
     deckContainer.classList.add('show-dots');
   },
   exit: function() {
     deckContainer.classList.remove('show-dots');
   },
-  offset: 1,
+  offset: 0.2,
 });
 
 enterView({
-  selector: '.step-container:nth-child(6)',
+  selector: '.step-container:nth-child(7)',
   enter: function() {
     deckContainer.classList.add('show-hospital-img');
   },
   exit: function() {
     deckContainer.classList.remove('show-hospital-img');
   },
-  offset: 1,
+  offset: 0,
 });
