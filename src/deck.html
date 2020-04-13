@@ -1,11 +1,15 @@
-<div>
-	<p class="prescrolly-fade-in g-body paragraph">{{ item.value.prescrolly }}
-	</p>
+<div id="deck-container">
 
- 	<div class="map-container">
- 		<include class="fade-stick-map" src="map.html">
- 		</include>
+  <div id="map-container">
+    <div id="vals-img">
+      <img src="https://arc-anglerfish-arc2-prod-spectator.s3.amazonaws.com/public/7FQ5CUIYLJA6LPZOWCDIOOWZWQ.jpg"/>
+    </div>
+    <div class="ai2html-container">
+      <include class="fade-stick-map" src="map.html"></include>
+    </div>
   </div>
+
+	<p class="prescrolly-fade-in g-body paragraph">{{ item.value.prescrolly }}</p>
 
 	<each loop="sentence in item.value.steps">
   	<div class="step-container">

@@ -31,16 +31,18 @@ export function hamburgerTrigger() {
 
 textBalancer.balanceText('.headline, .image-overlay .image-caption-text');
 
+// Map container opacity stuff
+
+const deckContainer = document.getElementById('deck-container');
+
 enterView({
   selector: '.prescrolly-fade-in',
-  enter: function(el) {
-    const element = document.getElementById('g-map-box');
-    element.style.opacity = 1;
+  enter: function() {
+    deckContainer.classList.add('show-map');
   },
-  exit: function(el) {
-    var element = document.getElementById('g-map-box');
-    element.style.opacity = 0;
+  exit: function() {
+    deckContainer.classList.remove('show-map');
   },
-  offset: 0.94, // enter at middle of viewport
+  offset: 1, // enter at middle of viewport
   // once: true, // trigger just once
 });

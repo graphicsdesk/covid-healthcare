@@ -2,6 +2,8 @@
 
 @import 'styles/news-ellipsis';
 
+$anim-duration: .3s;
+
 body {
   // Arc's overflow hidden on <body> messes up position sticky
   overflow-x: visible !important;
@@ -13,31 +15,42 @@ body {
   color: red;
 }
 
+#vals-img {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  transition-duration: $anim-duration;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
 .prescrolly-fade-in {
-  margin-top: 42vh;
+  color: white;
+  margin-bottom: 60vh;
 }
 
 #g-map-box {
-  opacity: 0;
-  transition-duration: .25s;
   width: 100%;
 }
 
-.map-container {
-	height: 100vh;
-	position: sticky;
-	position: -webkit-sticky;
-	top: 0;
-	z-index: -1;
-	margin-bottom: 20px;
+.ai2html-container {
+  opacity: 0;
+  transition-duration: $anim-duration;
+  height: 100vh;
   display: flex;
   align-items: center;
+  background: white;
 }
-
 
 .step-container {
   margin: 0 auto;
-	padding-bottom: 90vh;
+  padding-bottom: 90vh;
+  opacity: 0;
+  transition-duration: $anim-duration;
 
   p {
     padding: 20px;
@@ -56,6 +69,28 @@ body {
   .step-container p {
     margin-left: auto;
     margin-right: auto;
+  }
+}
+
+#map-container {
+	position: sticky;
+	position: -webkit-sticky;
+	top: 0;
+	z-index: -1;
+	margin-bottom: 20px;
+}
+
+#deck-container.show-map {
+  #vals-img {
+    opacity: 0;
+  }
+
+  .ai2html-container {
+    opacity: 1;
+  }
+
+  .step-container {
+    opacity: 1;
   }
 }
 
